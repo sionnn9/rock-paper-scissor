@@ -35,7 +35,7 @@ button.forEach(button=> button.addEventListener("click", () => {
     
     
 
-     /*  function Result (){
+    /*   function Result (){
             if(you == computer){                              
             return "TIE";
        }    
@@ -63,10 +63,10 @@ button.forEach(button=> button.addEventListener("click", () => {
     
     function Result(){
 
-        if(you=="ROCK" && computer=="ROCK" || you=="PAPER"&& computer=="PAPER" || you=="SCISSORS"&& computer=="SCISSORS"){
+        if(((you=="ROCK" && computer=="ROCK") || (you=="PAPER"&& computer=="PAPER") || (you=="SCISSOR"&& computer=="SCISSOR"))){
         return"tie"
         }
-        else if (you=="ROCK"&& computer=="SCISSORS" || you=="PAPER"&& computer=="ROCK" || you=="SCISSORS"&& computer=="PAPER"){
+        else if ((you=="ROCK"&& computer=="SCISSOR") || (you=="PAPER"&& computer=="ROCK") || (you=="SCISSOR"&& computer=="PAPER")){
         return"You win"
         }
         else 
