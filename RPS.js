@@ -2,6 +2,13 @@ const youText=document.querySelector("#youText")
 const computerText=document.querySelector("#computerText")
 const resultText=document.querySelector("#resultText")
 const button=document.querySelectorAll(".button")
+let youScoreDisplay = document.getElementById("#youScoreDisplay")
+let computerScoreDisplay = document.getElementById("#computerScoreDisplay")
+let youScore=0
+let computerScore=0
+
+
+
 let you;
 let computer;
 let result;
@@ -35,7 +42,7 @@ button.forEach(button=> button.addEventListener("click", () => {
     
     
 
-    /*   function Result (){
+  /*     function Result (){
             if(you == computer){                              
             return "TIE";
        }    
@@ -59,24 +66,28 @@ button.forEach(button=> button.addEventListener("click", () => {
                                 }
     }*/
     
-
+      
     
     function Result(){
-
+     
         if(((you=="ROCK" && computer=="ROCK") || (you=="PAPER"&& computer=="PAPER") || (you=="SCISSOR"&& computer=="SCISSOR"))){
         return"tie"
         }
         else if ((you=="ROCK"&& computer=="SCISSOR") || (you=="PAPER"&& computer=="ROCK") || (you=="SCISSOR"&& computer=="PAPER")){
         return"You win"
+        youScore++
+        youScoreDisplay.textContent=youScore
         }
         else 
         { 
         return"computer win"
+        computerScore++
+        computerScoreDisplay.innerHTML=computerScore
         }
     } 
+    
 
-
-  /* function win(){
+  /*  function win(){
     resultText.classList.add("won")
     resultText.classList.remove("lost")
   }
@@ -89,19 +100,4 @@ button.forEach(button=> button.addEventListener("click", () => {
 
 
 
-
-  /* function Result(){
-        if(you==computer){
-        return"draw"
-        }
-    else if(computer=="ROCK"){
-    return(you=="PAPER")? "win" : "loonse"
-    } 
-    else if(computer=="PAPER"){
-        return(you=="SCISSOR")? "win":"loonnse"
-        } 
-        else if(computer=="SCISSOR"){
-            return(player=="ROCK")? "win":"loonnnse"
-            } 
-
-}*/
+  
