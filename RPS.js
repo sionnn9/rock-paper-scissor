@@ -2,10 +2,10 @@ const youText=document.querySelector("#youText")
 const computerText=document.querySelector("#computerText")
 const resultText=document.querySelector("#resultText")
 const button=document.querySelectorAll(".button")
-let youScoreDisplay = document.getElementById("#youScoreDisplay")
-let computerScoreDisplay = document.getElementById("#computerScoreDisplay")
-let youScore=0
-let computerScore=0
+let youScoreDisplay = document.getElementById("youScoreDisplay")
+let computerScoreDisplay = document.getElementById("computerScoreDisplay")
+let youPoint=0
+let computerPoint=0
 
 
 
@@ -16,8 +16,8 @@ button.forEach(button=> button.addEventListener("click", () => {
 
     you=button.textContent;
     computerTurn();
-    youText.textContent=`YOU: ${you}`
-    computerText.textContent=`COMPUTER: ${computer}`
+    youText.textContent=`You Chose: ${you}`
+    computerText.textContent=`Computer Chose: ${computer}`
     resultText.textContent=Result()
 
 }))
@@ -74,13 +74,13 @@ button.forEach(button=> button.addEventListener("click", () => {
         return"tie"
         }
         else if ((you=="ROCK"&& computer=="SCISSOR") || (you=="PAPER"&& computer=="ROCK") || (you=="SCISSOR"&& computer=="PAPER")){
+        youScoreDisplay.innerHTML=youPoint++
         return"You win"
-        youScoreDisplay.innerHTML=youScore++
         }
         else 
         { 
+        computerScoreDisplay.innerHTML=computerPoint++
         return"computer win"
-        computerScoreDisplay.innerHTML=computerScore++
         }
     } 
     
