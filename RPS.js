@@ -75,14 +75,12 @@ button.forEach(button=> button.addEventListener("click", () => {
         }
         else if ((you=="ROCK"&& computer=="SCISSOR") || (you=="PAPER"&& computer=="ROCK") || (you=="SCISSOR"&& computer=="PAPER")){
         return"You win"
-        youScore++
-        youScoreDisplay.textContent=youScore
+        youScoreDisplay.innerHTML=youScore++
         }
         else 
         { 
         return"computer win"
-        computerScore++
-        computerScoreDisplay.innerHTML=computerScore
+        computerScoreDisplay.innerHTML=computerScore++
         }
     } 
     
