@@ -7,7 +7,7 @@ let computerScoreDisplay = document.getElementById("computerScoreDisplay")
 let youPoint=0
 let computerPoint=0
 
-const reset= document.getElementById("reset")
+//const reset= document.getElementById("reset")
 
 
 
@@ -93,15 +93,11 @@ button.forEach(button=> button.addEventListener("click", () => {
         }
     } 
 
-    
-
-   /*reset.addEventListener(onclick, function ()
+  
+   /*reset.addEventListener(onclick,function()
    {
     youPoint=0
     computerPoint=0
-    resultText.classList.remove("Result")
-
     youScoreDisplay.innerHTML=youPoint
     computerScoreDisplay.innerHTML=computerPoint
-    resultText.innerHTML="pick your move"
    }) */
