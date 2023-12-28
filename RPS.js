@@ -7,6 +7,8 @@ let computerScoreDisplay = document.getElementById("computerScoreDisplay")
 let youPoint=0
 let computerPoint=0
 
+const reset= document.getElementById("reset")
+
 
 
 let you;
@@ -19,7 +21,6 @@ button.forEach(button=> button.addEventListener("click", () => {
     youText.textContent=`You Chose: ${you}`
     computerText.textContent=`Computer Chose: ${computer}`
     resultText.textContent=Result()
-
 }))
 
   
@@ -42,60 +43,65 @@ button.forEach(button=> button.addEventListener("click", () => {
     
     
 
-  /*     function Result (){
+     /*    function Result (){
             if(you == computer){                              
             return "TIE";
        }    
                else if(you=="ROCK"&&computer=="PAPER"){
+                computerScoreDisplay.innerHTML=computerPoint++
                 return"COMPUTER WINS"
                }
                      else if(you=="PAPER" && computer=="ROCK"){
+                      youScoreDisplay.innerHTML=youPoint++
                       return"YOU WIN"
                      }
                         else if(you=="ROCK" && computer=="SCISSOR"){
+                          youScoreDisplay.innerHTML=youPoint++
                          return " YOU WIN "
                         }
                             else if(you=="SCISSOR" && computer=="ROCK"){
+                              computerScoreDisplay.innerHTML=computerPoint++
                              return"COMPUTER WINS"
                             }
                              else if(you=="SCISSOR" && computer=="PAPER"){
+                              youScoreDisplay.innerHTML=youPoint++
                               return"YOU WIN"
                              }
                                 else if(you=="PAPER" && computer=="SCISSOR"){
+                                  computerScoreDisplay.innerHTML=computerPoint++
                                 return"COMPUTER WINS"
                                 }
     }*/
     
       
     
-    function Result(){
-     
-        if(((you=="ROCK" && computer=="ROCK") || (you=="PAPER"&& computer=="PAPER") || (you=="SCISSOR"&& computer=="SCISSOR"))){
+   function Result(){
+
+    if(((you=="ROCK" && computer=="ROCK") || (you=="PAPER"&& computer=="PAPER") || (you=="SCISSOR"&& computer=="SCISSOR"))){
         return"tie"
         }
         else if ((you=="ROCK"&& computer=="SCISSOR") || (you=="PAPER"&& computer=="ROCK") || (you=="SCISSOR"&& computer=="PAPER")){
-        youScoreDisplay.innerHTML=youPoint++
-        return"You win"
+        youPoint++
+        youScoreDisplay.innerHTML=youPoint
+        return"YOU WIN!!"
         }
         else 
         { 
-        computerScoreDisplay.innerHTML=computerPoint++
-        return"computer win"
+        computerPoint++
+        computerScoreDisplay.innerHTML=computerPoint
+        return"COMPUTER WINS!!L"
         }
     } 
+
     
 
-  /*  function win(){
-    resultText.classList.add("won")
-    resultText.classList.remove("lost")
-  }
+   /*reset.addEventListener(onclick, function ()
+   {
+    youPoint=0
+    computerPoint=0
+    resultText.classList.remove("Result")
 
-  function lost(){
-    resultText.classList.add("lost")
-    resultText.classList.remove("won")
-
-  } */
-
-
-
-  
+    youScoreDisplay.innerHTML=youPoint
+    computerScoreDisplay.innerHTML=computerPoint
+    resultText.innerHTML="pick your move"
+   }) */
