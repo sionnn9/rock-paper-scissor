@@ -7,30 +7,6 @@
 }
 
 
-
-
-button{
-    background-color:red;
-     color:blue; 
-     border-radius:10px ; 
-     width: 200px;
-     height: 100px;
-     font-size: 30px;
-
-}
-
-#btn1{
-    position: relative;
-    right: 30%;
-    top : 110px;
-}
-#btn2{
-    position: relative;
-    left: 30%;
-    top : 10px;
-
-}
-
 #youPoint{
     text-align: center ;
     font-size: 25px;
@@ -58,20 +34,114 @@ button{
     padding: 16px;
 }
 
-.reset{
-
-    font-size:21px;
-}
-
 .inside{
+  
+  border-style: inset;
+  border-width: 18px;
+  border-color: rgb(207, 11, 11);
     background: linear-gradient(rgb(12, 229, 236),rgb(98, 184, 48));
 background-repeat: no-repeat;
 background-attachment: fixed;
 margin-right: auto;
 margin-left: auto;
-margin-top: 10px;
+margin-top: 100px;
 margin-bottom: 10px;
 margin-right: 20px;
 margin-left: 20px;
 
+}
+
+#score{
+ border-style: dotted;
+ border-width: 5px;
+}
+
+
+/* CSS */
+.button {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #0c1adf;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "press start 2p",sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 35px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 10%;
+}
+
+.button:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button:main,
+.button:focus {
+  user-select: auto;
+}
+
+.button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button:disabled {
+  cursor: auto;
+}
+
+.button:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+#btn1{
+  position: relative;
+  left: 18%;
+  top : 45px;
+}
+#btn2{
+  position: relative;
+  left: 33%;
+  top : 90px;
+
+}
+#btn3{
+  margin-left: 1000px;
+  position: relative;
+  top:45px;
+}
+#btn4{
+  position: relative;
+  left: 43%;
+  margin-bottom:25px ;
+  margin-top: 20px;
+  font-size: 13px;
 }
