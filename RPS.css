@@ -1,8 +1,13 @@
 #game{
     border: 3px solid;
-    border-radius: 25px;
+    border-radius: 50px;
+    background: linear-gradient(rgb(236, 158, 12),rgb(230, 80, 125));
+    margin: 0px;
 
 }
+
+
+
 
 button{
     background-color:red;
@@ -11,7 +16,33 @@ button{
      width: 200px;
      height: 100px;
      font-size: 30px;
+
 }
+
+#btn1{
+    position: relative;
+    right: 30%;
+    top : 110px;
+}
+#btn2{
+    position: relative;
+    left: 30%;
+    top : 10px;
+
+}
+
+#youPoint{
+    text-align: center ;
+    font-size: 25px;
+}
+#computerPoint{
+        text-align: center ;
+        font-size: 25px;
+}
+.gameText{
+    text-align: center;
+}
+
 
 .heading{
     font-family: "press start 2p",sans-serif;
@@ -30,4 +61,17 @@ button{
 .reset{
 
     font-size:21px;
+}
+
+.inside{
+    background: linear-gradient(rgb(12, 229, 236),rgb(98, 184, 48));
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin-right: auto;
+margin-left: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-right: 20px;
+margin-left: 20px;
+
 }
