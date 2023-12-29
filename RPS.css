@@ -8,12 +8,26 @@
 
 
 #youPoint{
+  position: relative;
+  right: 10%;
     text-align: center ;
     font-size: 25px;
+    display: flex;
+    color: rgb(17, 0, 255);
 }
 #computerPoint{
         text-align: center ;
         font-size: 25px;
+        display: flex;
+        color: red;
+}
+.points{
+  display:flex ;
+  padding-left: 850px;
+}
+.sion{
+  display: flex;
+  gap: 50px;;
 }
 .gameText{
     text-align: center;
@@ -39,7 +53,7 @@
   border-style: inset;
   border-width: 18px;
   border-color: rgb(207, 11, 11);
-    background: linear-gradient(rgb(12, 229, 236),rgb(98, 184, 48));
+    background: linear-gradient(to left,rgb(194, 61, 61),rgb(35, 85, 179));
 background-repeat: no-repeat;
 background-attachment: fixed;
 margin-right: auto;
@@ -52,9 +66,28 @@ margin-left: 20px;
 }
 
 #score{
- border-style: dotted;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, rgb(236, 12, 12),rgb(15, 12, 212));
+  color: aliceblue;
+ border-style:ridge;
  border-width: 5px;
+ border-color: black;
+ height: 40px;
+ width: 100px;
+ position: relative;
+ left: 47%;
+ display: flex;
+ align-items: center;
 }
+#youText{
+  color: #0c1adf;
+}
+#computerText{
+  color: red;
+}
+
+
 
 
 /* CSS */
@@ -124,12 +157,12 @@ margin-left: 20px;
 }
 #btn1{
   position: relative;
-  left: 18%;
+  left: 20%;
   top : 45px;
 }
 #btn2{
   position: relative;
-  left: 33%;
+  left: 35%;
   top : 90px;
 
 }
@@ -140,8 +173,15 @@ margin-left: 20px;
 }
 #btn4{
   position: relative;
-  left: 43%;
+  left: 45.2%;
   margin-bottom:25px ;
   margin-top: 20px;
   font-size: 13px;
+}
+
+.greenText{
+color: green;
+}
+.redText{
+color: red;
 }

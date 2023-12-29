@@ -93,8 +93,19 @@ button.forEach(button=> button.addEventListener("click", () => {
         }
     } 
 
+/*switch(Result){
+  case "YOU WIN!!":
+  resultText.classList.add("greenText")
+  break;
+  case "COMPUTER WINS!!L":
+  resultText.classList.add("redText")
+  break;
+}
+
+
+
   
-   /*reset.addEventListener(onclick,function()
+   reset.addEventListener(onclick,function()
    {
     youPoint=0
     computerPoint=0
